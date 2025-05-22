@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+:root{
+  --body_background: rgba(0, 0, 0, 0.959);
+  --body_color: white;
+}
+
+[data-theme='dark']{
+  --body_background:rgba(0, 0, 0, 0.959);
+  --body_color : white;
+}
+
+[data-theme='light']{
+  --body_background:white;
+  --body_color:rgba(0, 0, 0, 0.959);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
