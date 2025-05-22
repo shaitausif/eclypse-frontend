@@ -14,8 +14,8 @@ const Navbar = () => {
     <nav className="fixed top-0 right-0 left-0 z-10 inter-font-200 w-full">
       <div className="flex justify-between items-center backdrop-blur-xl bg-black/40 px-4 md:px-10 py-4 md:py-4">
         {/* Logo */}
-        <div onClick={() => navigate('/')} className="logo w-6 md:w-24">
-          <img className="w-6 md:w-14 rounded-full" src="https://res.cloudinary.com/dhrkajjwf/image/upload/v1747930318/eclipse_mcoho9.jpg" alt="logo" />
+        <div onClick={() => navigate('/')} className="logo w-9 md:w-14">
+          <img className="w-9 md:w-14 rounded-full" src="https://res.cloudinary.com/dhrkajjwf/image/upload/v1747930318/eclipse_mcoho9.jpg" alt="logo" />
         </div>
 
         {/* Menu */}
