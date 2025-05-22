@@ -29,7 +29,7 @@ const Product = () => {
   useEffect(() => {
     const fetchImages = async() => {
       try {
-        const response = await axios.get('/api/v1/images')
+        const response = await axios.get(`${process.env.BACKEND_URL}/api/v1/images`)
         setimageUrls(response.data)
         
       } catch (error) {
