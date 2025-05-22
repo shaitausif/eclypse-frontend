@@ -1,4 +1,4 @@
-Project Title: [Your Project Name Here]
+Project Title: Eclypse-Project
 A Full-Stack E-commerce/Web Application Built with React and Node.js
 This repository contains the source code for a modern, responsive web application developed as part of an internship assignment. The project aims to deliver a fully functional website, adhering closely to a provided Figma prototype, demonstrating proficiency in contemporary web development practices and a strong focus on user interface implementation.
 
