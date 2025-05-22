@@ -33,7 +33,7 @@ const DropBox = () => {
   useEffect(() => {
     const fetchTextData = async() => {
       try {
-        const response = await axios.get('/api/v1/text-data')
+        const response = await axios.get(`${process.env.BACKEND_URL}/api/v1/text-data`)
         setvalues(response.data)
       
       } catch (error) {
