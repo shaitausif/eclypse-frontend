@@ -1,6 +1,7 @@
-import axios from "axios";
+// import axios from "axios";
 import { ArrowDown, ArrowUp } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+// import {useEffect} from 'react';
 
 const DropBox = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
