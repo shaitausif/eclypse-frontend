@@ -1,10 +1,11 @@
 import { IndianRupee } from "lucide-react";
-import { useEffect, useState, type ChangeEvent } from "react"; // Import useState and ChangeEvent
+import { useState, type ChangeEvent } from "react"; // Import useState and ChangeEvent
 import { useNavigate } from "react-router-dom";
 import {toast} from 'react-toastify'
 import { Bounce } from "react-toastify";
 import { useProductContext } from "../context/productContext";
-import axios from "axios";
+// import axios from "axios";
+// import {useEffect} from 'react'
 
 
 
