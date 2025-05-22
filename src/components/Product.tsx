@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import {toast} from 'react-toastify'
 import { Bounce } from "react-toastify";
 import { useProductContext } from "../context/productContext";
-// import axios from "axios";
-// import {useEffect} from 'react'
+import axios from "axios";
+import {useEffect} from 'react'
 
 
 
@@ -16,31 +16,31 @@ const sizes: Size[] = ["XS", "S", "M", "L", "XL"]; // Define available sizes
 
 const Product = () => {
 
-  // const [imageUrls, setimageUrls] = useState([])
+  const [imageUrls, setimageUrls] = useState([])
 
-  const imageUrls = [
-    "https://res.cloudinary.com/dhrkajjwf/image/upload/v1747838102/pexels-luchik-14994091_kozary.jpg",
-    "https://res.cloudinary.com/dhrkajjwf/image/upload/v1747838108/pexels-cottonbro-4937452_necmhs.jpg",
-    "https://res.cloudinary.com/dhrkajjwf/image/upload/v1747838126/pexels-lepta-studio-333887315-13991626_hm8ymu.jpg",
-  ];
+  // const imageUrls = [
+  //   "https://res.cloudinary.com/dhrkajjwf/image/upload/v1747838102/pexels-luchik-14994091_kozary.jpg",
+  //   "https://res.cloudinary.com/dhrkajjwf/image/upload/v1747838108/pexels-cottonbro-4937452_necmhs.jpg",
+  //   "https://res.cloudinary.com/dhrkajjwf/image/upload/v1747838126/pexels-lepta-studio-333887315-13991626_hm8ymu.jpg",
+  // ];
 
    // Due to some errors while deploying my express server on vercel I am unable to fetch the data from the server right now, due to time constraint I am submitting this project to you and I am also trying to solve that error and if it got resolved i will make the changes in the application also
 
-  // useEffect(() => {
-  //   const fetchImages = async() => {
-  //     try {
-  //       const response = await axios.get('/api/v1/images')
-  //       setimageUrls(response.data)
+  useEffect(() => {
+    const fetchImages = async() => {
+      try {
+        const response = await axios.get('/api/v1/images')
+        setimageUrls(response.data)
         
-  //     } catch (error) {
-  //       console.error('Error fetching images:', error);
-  //       throw new Error("failed to get images ")
-  //     }  
-  //   }
+      } catch (error) {
+        console.error('Error fetching images:', error);
+        throw new Error("failed to get images ")
+      }  
+    }
 
-  //   fetchImages()
+    fetchImages()
     
-  // },[])
+  },[])
 
   const navigate = useNavigate()
 
