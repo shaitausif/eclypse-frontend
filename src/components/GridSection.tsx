@@ -28,7 +28,7 @@ const GridSection = () => {
       <div className="col-span-3 md:col-span-2 text-white  text-center rounded-sm md:rounded-lg"><video
       autoPlay controls={false} muted loop
       className="group rounded-lg h-fit md:h-[80vh] w-full object-cover"
-      src="https://res.cloudinary.com/dhrkajjwf/video/upload/v1747824920/5977122-uhd_3840_2160_25fps_o3fa6w.mp4"></video>
+      src="https://res.cloudinary.com/dhrkajjwf/video/upload/v1748109551/5977122-hd_1280_720_50fps_lnsq5j.mp4"></video>
     
       </div>
 
