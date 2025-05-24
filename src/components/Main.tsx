@@ -13,7 +13,7 @@ const Main = () => {
       <div className="video relative">
         <video
           className="rounded-sm md:rounded-lg h-[40vh] md:h-[90vh] w-screen object-cover mx-auto"
-          src="https://res.cloudinary.com/dhrkajjwf/video/upload/v1747823340/8386975-uhd_4096_2160_25fps_f1vfc3.mp4"
+          src="https://res.cloudinary.com/dhrkajjwf/video/upload/v1748109375/8386975-hd_1366_720_25fps_y5sdnt.mp4"
           autoPlay
           muted
           loop
