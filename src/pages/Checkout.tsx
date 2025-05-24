@@ -103,7 +103,7 @@ const Checkout = () => {
       <div className="flex gap-4 items-center my-5">
         <span
           className="hover:bg-gray-300 rounded-full p-1 md:p-2"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate('/')}
         >
           <ArrowLeft />
         </span>
@@ -224,7 +224,7 @@ const Checkout = () => {
                 {/* cancel button */}
                 <div className="text-center w-full md:w-1/4">
                   <button
-                    onClick={() => navigate(-1)}
+                    onClick={() => navigate('/')}
                     type="button"
                     className="bg-white w-full border rounded-lg px-8 md:px-0 py-3 md:py-4 hover:bg-gray-100 border-gray-400 font-semibold md:text-md"
                   >
