@@ -79,7 +79,7 @@ const Product = () => {
     });
       return;
     }
-    setProductDetails(prev => ({...prev, quantity : selectedSizes.length}))
+    setProductDetails(prev => ({...prev, quantity : selectedSizes.length === 0 ? 1 : selectedSize.length}))
     console.log("Adding product to cart with selected sizes:", selectedSizes);
     // This is where you'd send `selectedSizes` along with other product details
     // to an API, update a global state, or proceed with form submission.
@@ -207,7 +207,11 @@ const Product = () => {
                 Add to Cart
               </button>
               <button onClick={() => {
-                setProductDetails(prev => ({...prev, quantity : selectedSizes.length}))
+                // if(selectedSize.length === 0){
+                //   toast.warn("Please select the size first");
+                //   return;
+                // }
+                setProductDetails(prev => ({...prev, quantity : selectedSizes.length === 0 ? 1 : selectedSize.length}))
                 navigate('/checkout')
               }} className="bg-black hover:bg-[#E83F25] font-semibold text-md md:text-lg w-fit md:w-auto px-24 md:px-40 py-3 md:ml-10 md:py-4 text-white rounded-lg md:mb-0 mb-2">
                 Buy
