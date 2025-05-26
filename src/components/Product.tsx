@@ -6,13 +6,11 @@ import { Bounce } from "react-toastify";
 import { useProductContext } from "../context/productContext";
 import axios from "axios";
 import {useEffect} from 'react'
-import {useLocation} from "react-router-dom";
-
 
 
 // Define the type for our available sizes
 type Size = "XS" | "S" | "M" | "L" | "XL";
-const location = useLocation();
+
 
 const sizes: Size[] = ["XS", "S", "M", "L", "XL"]; // Define available sizes
 
@@ -42,7 +40,7 @@ const Product = () => {
 
     fetchImages()
     
-}, [location.pathname]); // Re-run on route changes
+}); 
 
   const navigate = useNavigate()
 
