@@ -40,7 +40,7 @@ const Product = () => {
 
     fetchImages()
     
-  },[])
+}, [location.pathname]); // Re-run on route changes
 
   const navigate = useNavigate()
 
