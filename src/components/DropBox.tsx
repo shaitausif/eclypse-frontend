@@ -72,7 +72,7 @@ const DropBox = () => {
             }`}
           >
             <div className="md:px-10 px-4 border rounded-xl border-gray-800 py-4 bg-black/80">
-              <p className="whitespace-pre-line">{value.description}</p>
+              <p className="whitespace-pre-line md:text-base text-sm">{value.description}</p>
             </div>
           </div>
 
