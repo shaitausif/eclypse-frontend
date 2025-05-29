@@ -29,7 +29,7 @@ const Product = () => {
   useEffect(() => {
     const fetchImages = async() => {
       try {
-        const response = await axios.get(`https://eclypse-backend.vercel.app/api/v1/images`)
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/v1/images`)
         setimageUrls(response.data)
         
       } catch (error) {
